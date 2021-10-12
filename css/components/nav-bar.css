@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid var(--lightblue);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__li {
+  width: 25%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+}
+.nav__li:hover {
+  background: var(--lightblue);
+  box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 50px #2196f3;
+}
+.nav__li:hover .nav__link {
+  color: var(--darkblue);
+}
+.nav__li:hover .nav__notification {
+  background-color: var(--darkblue);
+}
+.nav__link {
+  color: var(--lightblue);
+  position: relative;
+}
+.nav__notification {
+  background-color: var(--lightblue);
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+}
