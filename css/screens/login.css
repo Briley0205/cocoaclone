@@ -27,6 +27,7 @@
   font-size: 18px;
   margin-bottom: 25px;
   background: transparent;
+  color: var(--lightblue);
 }
 #login-form input::placeholder {
   color: var(--lightblue);
