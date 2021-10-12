@@ -5,6 +5,7 @@
 }
 .status-bar__column {
   width: 33%;
+  color: var(--lightblue);
 }
 .status-bar__column:first-child span {
   margin-right: 5px;
@@ -12,11 +13,13 @@
 .status-bar__column:nth-child(2) {
   display: flex;
   justify-content: center;
+  color: var(--lightblue);
 }
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: var(--lightblue);
 }
 .status-bar__column .fa-battery-quarter {
   margin: 0px 5px;
