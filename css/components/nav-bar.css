@@ -4,6 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   border-top: 1px solid var(--lightblue);
+  background: var(--blackblue);
 }
 .nav__list {
   display: flex;
