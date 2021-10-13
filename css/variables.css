@@ -1,8 +1,10 @@
 :root {
   --yellow: #fae100;
+  --lighterblue: rgb(133, 206, 235);
   --lightblue: #2196f3;
   --darkblue: #255784;
   --darkerblue: #081a2b;
   --blackblue: #031321;
   --horizontal-space: 25px;
+  --main-border: 2px solid var(--darkerblue);
 }

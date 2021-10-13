@@ -33,7 +33,7 @@
 }
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: 2px solid var(--darkerblue);
+  border-top: var(--main-border);
   padding-top: 15px;
 }
 .friends-screen__channel-header {
