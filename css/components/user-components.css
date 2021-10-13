@@ -6,7 +6,7 @@
 .user-component__avatar {
   width: 70px;
   height: 70px;
-  border-radius: 30px;
+  border-radius: 28px;
   margin-right: 20px;
 }
 .user-component__title {
@@ -17,4 +17,9 @@
   font-size: 17px;
   margin-top: 5px;
   color: #2195f381;
+}
+.user-component__time {
+  margin-bottom: 10px;
+  margin-left: -18px;
+  display: block;
 }
