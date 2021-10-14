@@ -21,8 +21,15 @@
   margin-top: 5px;
   color: #2195f381;
 }
+.usercomponent__subtitle i {
+  margin-left: 5px;
+  color: var(--lighterblue);
+}
 .user-component__time {
   margin-bottom: 10px;
   margin-left: -18px;
   display: block;
+}
+.user-component__text h4 {
+  color: var(--lightblue);
 }

@@ -1,0 +1,33 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: var(--main-border);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  justify-content: space-between;
+}
+.settings__setting i {
+  margin: 0 20px;
+}
+.settings__setting span {
+  color: var(--lightblue);
+}
+.settings__setting:hover {
+  background: var(--lightblue);
+  box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 50px #2196f3;
+  border-bottom: 2px solid var(--lightblue);
+}
+.settings__setting:hover i {
+  color: var(--darkblue);
+}
+.settings__setting:hover span {
+  color: var(--darkblue);
+}
+.settings__setting-column:nth-child(2) {
+  color: var(--darkblue);
+  font-size: 20px;
+}
+.alt-header__column i {
+  color: var(--lightblue);
+}

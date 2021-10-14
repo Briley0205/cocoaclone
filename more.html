@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's find!</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>        
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>                                                                  </span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fas fa-battery-quarter fa-lg"></i>            
+            <i class="fas fa-bolt"></i>        
+        </div>
+    </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-music fa-lg"></i>
+          </span>
+          <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://i.redd.it/2sjfho5nhld61.png" class="user-component__avatar user-component__avatar--xl">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Legoshi</h4>
+                    <h6 class="usercomponent__subtitle">010-XXXX-XXXX<i class="fas fa-exclamation-circle"></i></h6>
+                </div>
+            </div>
+            <div class="user-component__column"><i class="far fa-comment-alt fa-2x"></i></div>
+           </div>
+           <div class="icon-row more-screen">
+            <div class="icon-row__icon"><i class="fas fa-calendar fa-2x"></i><span>Calendar</span></div>
+            <div class="icon-row__icon"><i class="fas fa-smile-beam fa-2x"></i><span>Emoticons</span></div>
+            <div class="icon-row__icon"><i class="fas fa-paint-roller fa-2x"></i><span>Themes</span></div>
+            <div class="icon-row__icon"><i class="fas fa-file-invoice-dollar fa-2x"></i><span>Account</span></div>
+            <!--화면의 크기가 너무 작아지면 아이콘 정렬이 망가진다.-->
+        </div>
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Beastar Story</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__li"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+            <li class="nav__li"><a class="nav__link" href="chats.html"><span class="nav__notification badge">1</span><i class="far fa-comment fa-2x"></i></a></li>
+            <li class="nav__li"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+            <li class="nav__li"><a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/0d9c767800.js" crossorigin="anonymous"></script>
+</body>
+</html>
