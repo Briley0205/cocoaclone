@@ -75,6 +75,6 @@
 }
 .open-post__heart-count span {
   margin-left: 3px;
-  color: var(--lighterblue);
+  color: var(--lightblue);
   font-weight: 200;
 }

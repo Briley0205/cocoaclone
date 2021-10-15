@@ -1,2 +1,142 @@
 #chat-screen {
+  background: var(--blackpurple);
+  height: 11000vh;
+}
+#chat-screen__status {
+  background: var(--blackpurple);
+}
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--blackpurple);
+  top: 0px;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat__timestamp {
+  background: #121a41;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.message__author {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--lightblue);
+  margin-bottom: 10px;
+  display: block;
+}
+.message__box {
+  /*background: rgba(0, 0, 0, 0.5);*/
+  padding: 13px 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+.message__box:hover {
+  background: var(--pauderblue);
+  box-shadow: 0 0 10px var(--pauderblue), 0 0 30px var(--pauderblue),
+    0 0 60px var(--pauderblue);
+}
+.message__box::before {
+  content: "";
+  margin-top: -160px;
+  margin-left: 70px;
+  position: absolute;
+  width: 30px;
+  height: 800%;
+  background: var(--pauderblue);
+  transition: 2s;
+  animation: text-box 5s linear infinite;
+  animation-delay: calc(0.33s * var(--i));
+  border-radius: 15px;
+}
+.message__box:hover::before {
+  width: 200%;
+  margin-left: -100px;
+}
+@keyframes text-box {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.message__box::after {
+  content: "";
+  inset: 1px;
+  position: absolute;
+  background: var(--blackpurple);
+  transition: 0.5s;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+}
+.message__box:hover::after {
+  background: var(--pauderblue);
+}
+.message__box span {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  color: var(--lightblue);
+  font-weight: 400;
+}
+.message__box:hover span {
+  color: var(--darkblue);
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__time {
+  color: var(--lightblue);
+}
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__box {
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+}
+.message__box--own:hover {
+  background: var(--lightgreen);
+  box-shadow: 0 0 10px var(--lightgreen), 0 0 30px var(--lightgreen),
+    0 0 60px var(--lightgreen);
+}
+.message-row--own .message__box::before {
+  background: var(--lightgreen);
+}
+.message__box--own:hover::after {
+  background: var(--lightgreen);
+}
+.message-row--own .message__box::after {
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
 }
