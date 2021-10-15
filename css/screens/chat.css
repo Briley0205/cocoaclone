@@ -140,3 +140,58 @@
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1f295c;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply .form__column:first-child {
+  width: 5%;
+}
+.reply .form__column:last-child {
+  width: 95%;
+  position: relative;
+}
+.form__column:last-child > i,
+.form__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  padding: 0px 15px;
+  border: 1px solid#121a41;
+  border-radius: 20px;
+  background: #121a41;
+  color: var(--lightblue);
+}
+.reply input::placeholder {
+  color: var(--lightblue);
+}
+.form__column:last-child i {
+  right: 40px;
+  top: 10px;
+}
+.form__column:last-child > i {
+  color: #1f295c;
+}
+.form__column button {
+  background: #1f295c;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--lightblue);
+}
+.form__column button:focus,
+.form__column button:active {
+  outline: none;
+}
