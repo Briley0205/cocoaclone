@@ -41,3 +41,35 @@
   display: flex;
   justify-content: space-between;
 }
+#splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--blackblue);
+  position: absolute;
+  top: 0;
+  caret-color: transparent;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 4s;
+}
+#splash-screen p {
+  font-size: 25px;
+  color: var(--lighterblue);
+  text-transform: uppercase;
+  text-shadow: 0 0 5px var(--lighterblue);
+  letter-spacing: 3px;
+  padding-top: 15px;
+  caret-color: transparent;
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
