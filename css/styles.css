@@ -2,6 +2,7 @@
 @import "variables.css";
 
 /* Components */
+@import "components/no-mobile.css";
 @import "components/statusbar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
@@ -10,7 +11,6 @@
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
 @import "components/splash-icon.css";
-@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
